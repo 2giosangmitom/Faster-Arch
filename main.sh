@@ -17,7 +17,7 @@ sudo pacman -S linux-zen --noconfirm --needed
 # Install dbus-broker
 echo -e "\n\033[1;31mInstall dbus-broker...\n\033[0m"
 sudo pacman -S dbus-broker --noconfirm --needed
-systemctl --user enable dbus-broker.service
+sudo systemctl enable dbus-broker.service
 
 # Install earlyoom
 echo -e "\n\033[1;31mInstall earlyoom...\n\033[0m"
