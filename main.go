@@ -44,18 +44,6 @@ func install_intel_driver() {
 	runCommand("sudo pacman -S intel-media-driver --noconfirm --needed")
 }
 
-func install_paccache() {
-	fmt.Println(Red + ">> Install pacman-contrib" + Reset)
-	runCommand("sudo pacman -S pacman-contrib --noconfirm --needed")
-	runCommand("paccache --remove --keep 1")
-	runCommand("paccache --remove --uninstalled --keep 0")
-}
-
-func install_linux_zen() {
-	fmt.Println(Purple + ">> Install linux-zen" + Reset)
-	runCommand("sudo pacman -S linux-zen --noconfirm --needed")
-}
-
 func install_dbus_broker() {
 	fmt.Println(Yellow + ">> Install bus_broker" + Reset)
 	runCommand("sudo pacman -S dbus-broker --noconfirm --needed")
@@ -93,8 +81,6 @@ func disable_journald() {
 
 func main() {
 	install_intel_driver()
-	install_paccache()
-	install_linux_zen()
 	install_dbus_broker()
 	install_ananicy()
 	install_earlyoom()
