@@ -40,5 +40,7 @@ sudo sed -E -i 's/#Storage=auto/Storage=none/' /etc/systemd/journald.conf
 
 echo -e "$WHITE>> Setup auto cleanup cache$NOCOLOR"
 sudo pacman -S pacman-contrib --noconfirm --needed
-paccache -r
+[[ -n $(pacman -Qdt) ]] && sudo pacman -Rns $(pacman -Qdtq) --noconfirm || echo "No orphaned packages to remove!"
+paccache --remove --keep 1
+paccache --remove --uninstalled --keep 0
 sudo systemctl enable --now paccache.timer
