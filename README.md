@@ -32,7 +32,7 @@ Before running the optimization script, ensure the following prerequisites are m
 3. Run the script with root privileges:
 
    ```bash
-   sudo ./main.sh
+   ./main.sh
    ```
 
 4. Follow the on-screen prompts to customize optimization options if needed.
