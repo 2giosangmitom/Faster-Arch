@@ -5,7 +5,7 @@ optimize() {
 	sudo pacman -Syu
 
 	# Install necessary tools for performance optimization
-	sudo pacman -S --noconfirm --needed sysstat thermald
+	sudo pacman -S --noconfirm --needed sysstat thermald linux-zen
 
 	# Enable services
 	sudo systemctl enable --now sysstat
