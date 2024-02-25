@@ -16,6 +16,8 @@ Before running the optimization script, ensure the following prerequisites are m
 - Root privileges to execute the script.
 
 ## Usage
+> [!IMPORTANT]
+> Remember to review the script's source code before running it, especially when executing with root privileges.
 
 1. Clone the repository:
 
@@ -46,7 +48,3 @@ Contributions to this project are welcome! If you have any suggestions, improvem
 ## Disclaimer
 
 This script is provided as-is, without any warranty. Use it at your own risk. Always review the script contents and ensure it aligns with your system configuration before execution.
-
----
-
-**Note:** Remember to review the script's source code before running it, especially when executing with root privileges.
