@@ -31,7 +31,7 @@ Before running the optimization script, ensure the following prerequisites are m
    cd Faster-Arch
    ```
 
-3. Run the script with root privileges:
+3. Run the script:
 
    ```bash
    ./main.sh
